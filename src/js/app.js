@@ -32,7 +32,7 @@ function dragAndDrop(event, element) {
 
 function saveTasks() {
   const toDoTasks = document.querySelectorAll('#todo .column-tasks .item-task');
-  const inProgressTasks = document.querySelectorAll('#in-progress .column-tasks .item-task',);
+  const inProgressTasks = document.querySelectorAll('#in-progress .column-tasks .item-task');
   const doneTasks = document.querySelectorAll('#done .column-tasks .item-task');
 
   const savedTasks = {
@@ -76,7 +76,7 @@ tasks.addEventListener('mousedown', (event) => {
       .closest('.column')
       .querySelector('.add-task')
       .classList.remove('hidden');
-      event.target.parentNode.classList.add('hidden');
+    event.target.parentNode.classList.add('hidden');
 
     // add card
   } else if (event.target.classList.contains('add-task-hidden')) {
@@ -90,7 +90,7 @@ tasks.addEventListener('mousedown', (event) => {
       .closest('.column')
       .querySelector('.add-task')
       .classList.remove('hidden');
-      event.target.parentNode.classList.add('hidden');
+    event.target.parentNode.classList.add('hidden');
     saveTasks();
 
     // delete card
