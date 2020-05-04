@@ -107,8 +107,13 @@ body {
   color: green;
 }
 
+.add-task-hidden {
+  cursor: pointer;
+}
+
 .cancel-task-hidden {
   float: right;
+  cursor: pointer;
 }
 
 .cancel-task-hidden:hover {
